@@ -1,0 +1,21 @@
+﻿c toggle the option for each press of [K_A] expect output
+c to toggle between t1 and t2
+c options_set generated from template at 2021-09-07 13:36:18
+c with name "Options Set"
+store(&NAME) 'Options Set'
+store(&COPYRIGHT) 'Copyright (C)'
+store(&VERSION) '10.0'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'options_set.kvks'
+store(&LAYOUTFILE) 'options_set.keyman-touch-layout'
+
+store(foo) '0'
+
+begin Unicode > use(Main)
+
+group(Main) using keys
+
+if(foo = '1') + 'a' > 't1' set(foo='0') 
+if(foo != '1') + 'a' > 't2' set(foo='1')
+
