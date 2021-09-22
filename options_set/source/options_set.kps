@@ -59,7 +59,7 @@
       <ID>options_set</ID>
       <Version>1.0</Version>
       <Languages>
-        <Language ID="en-AU">English</Language>
+        <Language ID="en">English</Language>
       </Languages>
     </Keyboard>
   </Keyboards>
